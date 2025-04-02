@@ -31,6 +31,17 @@ import {
     const [about, setAbout] = useState("");
     const [category, setCategory] = useState("");
     const [loading, setLoading] = useState(false);
+
+    // Validation functions
+    const validateWebsite = (url) => {
+      const websiteRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/;
+      return websiteRegex.test(url);
+    };
+
+    const validateContact = (number) => {
+      const numberRegex = /^[0-9]+$/;
+      return numberRegex.test(number);
+    };
   
     useEffect(() => {
       navigation.setOptions({
@@ -94,6 +105,14 @@ import {
         Alert.alert("Error", "Please enter contact information");
         return false;
       }
+      if (!validateContact(contact)) {
+        Alert.alert("Error", "Contact number should contain only digits");
+        return false;
+      }
+      if (website && !validateWebsite(website)) {
+        Alert.alert("Error", "Please enter a valid website URL");
+        return false;
+      }
       if (!category) {
         Alert.alert("Error", "Please select a category");
         return false;
@@ -128,7 +147,7 @@ import {
         username: user?.fullName,
         userEmail: user?.primaryEmailAddress?.emailAddress,
         userImage: user?.imageUrl,
-        imageUrl: image, // Store the local image URI directly
+        imageUrl: image,
         createdAt: new Date().toISOString(),
       };
 
@@ -187,7 +206,7 @@ import {
   
         <View>
           <TextInput
-            placeholder="Name"
+            placeholder="Enter Business Name (e.g., John's Restaurant)"
             value={name}
             onChangeText={setName}
             style={{
@@ -202,7 +221,7 @@ import {
             }}
           />
           <TextInput
-            placeholder="Address"
+            placeholder="Enter Business Address (e.g., 123 Main St, City)"
             value={address}
             onChangeText={setAddress}
             style={{
@@ -217,9 +236,15 @@ import {
             }}
           />
           <TextInput
-            placeholder="Contact"
+            placeholder="Enter Contact Number (e.g., 1234567890)"
             value={contact}
-            onChangeText={setContact}
+            onChangeText={(text) => {
+              if (validateContact(text) || text === '') {
+                setContact(text);
+              }
+            }}
+            keyboardType="numeric"
+            maxLength={15}
             style={{
               padding: 10,
               borderWidth: 1,
@@ -232,9 +257,10 @@ import {
             }}
           />
           <TextInput
-            placeholder="Website"
+            placeholder="Enter Website URL (e.g., www.example.com)"
             value={website}
             onChangeText={setWebsite}
+            autoCapitalize="none"
             style={{
               padding: 10,
               borderWidth: 1,
@@ -247,7 +273,7 @@ import {
             }}
           />
           <TextInput
-            placeholder="About"
+            placeholder="Enter Business Description (e.g., A cozy restaurant serving authentic cuisine)"
             value={about}
             onChangeText={setAbout}
             multiline
@@ -278,7 +304,7 @@ import {
             <RNPickerSelect
               onValueChange={setCategory}
               items={categoryList}
-              placeholder={{ label: "Select Category", value: null }}
+              placeholder={{ label: "Select Business Category", value: null }}
             />
           </View>
         </View>

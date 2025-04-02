@@ -8,6 +8,7 @@ import Intro from "../../app-example/components/BusinessDetail/Intro";
 import ActionButton from "../../app-example/components/BusinessDetail/ActionButton";
 import About from "../../app-example/components/BusinessDetail/About";
 import Reviews from "../../app-example/components/BusinessDetail/Reviews";
+import ImageGallery from "../../app-example/components/BusinessDetail/ImageGallery";
 
 export default function BusinessDetail() {
   const { businessid } = useLocalSearchParams();
@@ -71,6 +72,9 @@ export default function BusinessDetail() {
 
           {/* About Section  */}
           <About business={business} />
+
+          {/* Image Gallery */}
+          <ImageGallery business={business} />
 
           {/* Reviews Section  */}
           <Reviews business={business} />
