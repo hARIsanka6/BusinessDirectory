@@ -1,11 +1,11 @@
 # Welcome to BuzzD the bussiness directory app meant to connect local bussiesses
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/869e56e9-e22b-45ba-96a7-60fd8eb26869" alt="Image 1" width="400px" height="500px" />
-  <img src="https://github.com/user-attachments/assets/c96da297-e4dc-4ad1-b461-1754cb8ea444" alt="Image 2" width="400px" height="500px"/>
-  <img src="https://github.com/user-attachments/assets/ec510a15-dd10-460a-9b5f-12b364449e7a" alt="Image 3" width="400px" height="500px"/>
-  <img src="https://github.com/user-attachments/assets/a6e5589e-a086-4585-80eb-8e98aeb83046" alt="Image 4" width="400px" height="500px"/>
-  <img src="https://github.com/user-attachments/assets/f8dc155b-0dbd-44c4-ad71-e17a19ff6756" alt="Image 5" width="400px" height="500px"/>
-  <img src="https://github.com/user-attachments/assets/6b859da3-a227-421b-8fb0-a01e1dc94041" alt="Image 6" width="400px" height="500px"/>
+  <img src="https://github.com/user-attachments/assets/869e56e9-e22b-45ba-96a7-60fd8eb26869" alt="Image 1" width="250px" height="500px" />
+  <img src="https://github.com/user-attachments/assets/c96da297-e4dc-4ad1-b461-1754cb8ea444" alt="Image 2" width="250px" height="500px"/>
+  <img src="https://github.com/user-attachments/assets/ec510a15-dd10-460a-9b5f-12b364449e7a" alt="Image 3" width="250px" height="500px"/>
+  <img src="https://github.com/user-attachments/assets/a6e5589e-a086-4585-80eb-8e98aeb83046" alt="Image 4" width="250px" height="500px"/>
+  <img src="https://github.com/user-attachments/assets/f8dc155b-0dbd-44c4-ad71-e17a19ff6756" alt="Image 5" width="250px" height="500px"/>
+  <img src="https://github.com/user-attachments/assets/6b859da3-a227-421b-8fb0-a01e1dc94041" alt="Image 6" width="250px" height="500px"/>
 </div>
 
 ![Home page]()
