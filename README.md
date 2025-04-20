@@ -1,4 +1,13 @@
-# Welcome to your Expo app 👋
+# Welcome to BuzzD the bussiness directory app meant to connect local bussiesses
+![Login/sign up page](https://github.com/user-attachments/assets/869e56e9-e22b-45ba-96a7-60fd8eb26869)
+![Home page](https://github.com/user-attachments/assets/c96da297-e4dc-4ad1-b461-1754cb8ea444)
+![Explore page](https://github.com/user-attachments/assets/ec510a15-dd10-460a-9b5f-12b364449e7a)
+![Profile page](https://github.com/user-attachments/assets/a6e5589e-a086-4585-80eb-8e98aeb83046)
+![Add bussiness](https://github.com/user-attachments/assets/f8dc155b-0dbd-44c4-ad71-e17a19ff6756)
+![Bussiness details](https://github.com/user-attachments/assets/6b859da3-a227-421b-8fb0-a01e1dc94041)
+
+
+
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
